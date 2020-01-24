@@ -1,4 +1,4 @@
-package recit1;
+package recit1plans;
 
 public class ControlPractice {
 	public static void main(String[] args) {
