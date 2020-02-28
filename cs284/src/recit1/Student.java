@@ -4,6 +4,12 @@ public class Student implements Person{
 	private String name;
 	private int age;
 	private String address;
+	/**
+	 * 
+	 * @param name
+	 * @param age
+	 * @param address
+	 */
 	public Student(String name, int age, String address) {
 		this.name = name;
 		this.age = age;
@@ -14,7 +20,7 @@ public class Student implements Person{
 		// TODO Auto-generated method stub
 		System.out.println("Studying");
 	}
-
+	
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
