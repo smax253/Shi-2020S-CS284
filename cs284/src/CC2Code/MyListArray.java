@@ -1,4 +1,4 @@
-package CC1Sol;
+package CC2Code;
 
 public class MyListArray<E> extends MyList<E>{
     private E[] data;

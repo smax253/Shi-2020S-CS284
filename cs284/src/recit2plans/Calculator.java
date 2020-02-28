@@ -1,9 +1,9 @@
 package recit2plans;
 
 public class Calculator {
-	public static int add(int x, int y) {
-		return x+y;
-	}
+	
+	public static int add(int x, int y) { return x+y; }
+	 
 	public static int divide(int x, int y) {
 		return x/y;
 	}
@@ -13,6 +13,7 @@ public class Calculator {
 	public static int subtract(int x, int y) {
 		return x-y;
 	}
+	
 	public static int[] addValues(int[] values, int increment) {
 		for (int i : values) {
 			i = i + increment;
@@ -29,4 +30,5 @@ public class Calculator {
 		if (number>0) return false;
 		else return true;
 	}
+	
 }

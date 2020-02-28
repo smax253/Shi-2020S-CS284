@@ -1,4 +1,4 @@
-package CC1Sol;
+
 
 public class MyListLL<E> extends MyList<E>{
     private class Node<E>{
@@ -17,7 +17,9 @@ public class MyListLL<E> extends MyList<E>{
         for(int i = 1; i<length; i++){
             current.next = new Node<>(null);
             current = current.next;
+
         }
+        this.length = length;
     }
     public E get(int index){
         // ???
@@ -39,24 +41,17 @@ public class MyListLL<E> extends MyList<E>{
         current.item = item;
     }
     public int length(){
-        Node<E> current = head;
-        int count = 0;
-        while (current != null){
-            count++;
-            current = current.next;
-        }
-        return count;
+        return length;
     }
     public static void main(String[] args){
         int[] nums = {5,4,7,2};
         String[] strs = {"hello","friday","is","here"};
-        MyList<String> arr = new MyListArray<>(4);
-        MyList<String> strarr = new MyListLL<>(4);
+        MyList<String> arr = new MyListArray<String>(4);
+        MyList<String> strarr = new MyListLL<String>(4);
         for(int i = 0; i<strs.length; i++){
             strarr.set(i, strs[i]);
             arr.set(i, strs[i]);
         }
-        System.out.println(strarr.length());
         System.out.println(strarr.toString());
         System.out.println(arr.toString());
     }

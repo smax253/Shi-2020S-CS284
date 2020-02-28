@@ -1,6 +1,6 @@
-package CC1Sol;
+package CC2Exercise;
 
-public abstract class MyList<E extends Comparable>{
+public abstract class MyList<E>{
     //get(), set(), length(), and toString()
     abstract E get(int index);
     abstract void set(int index, E element);
